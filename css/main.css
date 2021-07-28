@@ -5,7 +5,7 @@
 	padding: 0;
 }
 :root {
-	--url: url("../img/kym.JPG");
+	--url: url("../img/Brown\ Lady\ sitting\ on\ stool.jpg");
 	--clr-neutral-900: hsl(207, 19%, 9%);
 	--clr-neutral-100: hsl(0, 0%, 100%);
 	--clr-accent-400: hsl(142, 90%, 61%);
@@ -329,7 +329,7 @@
 	align-items: center;
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
-	justify-content: flex-end; 
+	justify-content: flex-end;
 }
 .container {
 	position: center;
