@@ -5,7 +5,8 @@
 	padding: 0;
 }
 :root {
-	--url: url("../img/kym.JPG");
+	--url: url("../img/Photo.jpg");
+	--bio: url("../img/Kym2.jpeg");
 	--clr-neutral-900: hsl(207, 19%, 9%);
 	--clr-neutral-100: hsl(0, 0%, 100%);
 	--clr-accent-400: hsl(142, 90%, 61%);
@@ -21,14 +22,8 @@
 	-ms-flex-align: center;
 	align-items: center;
 	text-align: center;
-	background: -webkit-gradient(
-			linear,
-			left top,
-			right top,
-			from(rgba(39, 39, 39, 0.9)),
-			to(rgba(39, 39, 39, 0.3))
-		),
-		var(--url) center top;
+	background-image: var(--url) center top;
+
 	background: linear-gradient(
 			to right,
 			rgba(39, 39, 39, 0.9),
@@ -36,6 +31,7 @@
 		),
 		var(--url) right bottom;
 	background-size: cover;
+	background-color: #ff652f;
 }
 
 .home__name {
@@ -219,14 +215,15 @@
 			from(rgba(39, 39, 39, 0.9)),
 			to(rgba(39, 39, 39, 0.3))
 		),
-		var(--url) center top;
+		var(--bio) 55% 35%;
 	background: linear-gradient(
 			to right,
 			rgba(39, 39, 39, 0.9),
 			rgba(39, 39, 39, 0.3)
 		),
-		var(--url) center top;
-	background-size: cover;
+		var(--bio) 55% 35%;
+	background-size: 30%;
+	background-repeat: no-repeat;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -302,7 +299,7 @@
 .projects__bio-image {
 	height: 30vh;
 	width: 100%;
-	background: -webkit-gradient(
+	background-image: -webkit-gradient(
 			linear,
 			left top,
 			right top,
@@ -317,6 +314,7 @@
 		),
 		var(--url) center top;
 	background-size: cover;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -331,29 +329,79 @@
 	-ms-flex-pack: end;
 	justify-content: flex-end;
 }
-.container {
+.container1 {
 	position: center;
 	padding: 150px;
 	margin-right: 75px;
-	display: flex;
+	display: grid;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"header header2 header3"
+		"footer footer2 footer3";
+
+	gap: 15px 10px;
+	justify-items: center;
 }
-div.card#1 {
-	background-image: url("../img/I\ am\ enough.jpg") center top;
+
+#c1 {
+	background: url("../img/Beach\ Front.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#c2 {
+	background: url("../img/blackgirl.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#c3 {
+	background: url("../img/Muitverse.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+#c4 {
+	background: url("../img/A\ Man\ playing\ the\ piano\ on\ the\ Brooklyn\ Bridge.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#c5 {
+	background-image: url("../img/Do\ I.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#c6 {
+	background-image: url("../img/love.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container1 > .card {
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .card {
 	color: var(--clr-neutral-100);
-	background: url("../img/I\ am\ enough.jpg");
-	background-position: center;
+	background-image: url("../img/A\ Man\ playing\ the\ piano\ on\ the\ Brooklyn\ Bridge.jpeg") center top;
 	background-size: cover;
+	background-repeat: no-repeat;
 	padding: 8rem 0 0;
-	max-width: 35ch;
+	min-width: 25ch;
+	max-width: 30ch;
 	border-radius: 0.5rem;
 	overflow: hidden;
 
 	transform: transform 500ms ease;
+}
+.card-content {
+	text-overflow: ellipsis;
 }
 .card:hover {
 	transform: scale(1.05);
@@ -367,7 +415,7 @@ div.card#1 {
 		hsl(0 0% 0% / 0.2) 10%,
 		hsl(0 0% 0% / 1)
 	);
-	transform: translateY(75%);
+	transform: translateY(95%);
 	transition: transform 500ms ease;
 }
 .card:hover .card-content {
@@ -637,7 +685,13 @@ card-body {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-
+.Bio {
+	font-size: medium;
+	align-items: center;
+	padding-left: 75px;
+	padding-right: 75px;
+	line-height: 200%;
+}
 @media screen and (min-width: 1024px) {
 	.projects__items {
 		-ms-grid-columns: (1fr) [3];
@@ -676,6 +730,7 @@ a {
 
 .text-secondary {
 	color: #ff652f;
+	justify-content: center;
 }
 
 header {
