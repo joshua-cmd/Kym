@@ -352,31 +352,26 @@
 	background: url("../img/Beach\ Front.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
 #c2 {
 	background: url("../img/blackgirl.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
 #c3 {
 	background: url("../img/Muitverse.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 #c4 {
 	background: url("../img/A\ Man\ playing\ the\ piano\ on\ the\ Brooklyn\ Bridge.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
 #c5 {
 	background-image: url("../img/Do\ I.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
 #c6 {
 	background-image: url("../img/love.JPG");
@@ -389,7 +384,8 @@
 }
 .card {
 	color: var(--clr-neutral-100);
-	background-image: url("../img/A\ Man\ playing\ the\ piano\ on\ the\ Brooklyn\ Bridge.jpeg") center top;
+	background-image: url("../img/A\ Man\ playing\ the\ piano\ on\ the\ Brooklyn\ Bridge.jpeg")
+		center top;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 8rem 0 0;
@@ -415,7 +411,7 @@
 		hsl(0 0% 0% / 0.2) 10%,
 		hsl(0 0% 0% / 1)
 	);
-	transform: translateY(95%);
+	transform: translateY(115%);
 	transition: transform 500ms ease;
 }
 .card:hover .card-content {
@@ -644,7 +640,14 @@ card-body {
 	position: initial;
 	margin-top: 2rem;
 }
-
+@media only screen and (max-width: 600px) {
+	.container1 {
+		
+		grid-template-columns: none;
+		grid-template-rows: none;
+		grid-template-areas: none;
+	}
+  }
 @media screen and (min-width: 768px) {
 	.menu-btn {
 		visibility: hidden;
@@ -667,6 +670,7 @@ card-body {
 	.nav .menu-nav__link {
 		font-size: 1.5rem;
 	}
+	
 	.about__bio {
 		font-size: 1.5rem;
 	}
