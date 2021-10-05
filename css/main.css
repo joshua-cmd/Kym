@@ -389,6 +389,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 8rem 0 0;
+	max-height: 41.2ch;
 	min-width: 25ch;
 	max-width: 30ch;
 	border-radius: 0.5rem;
