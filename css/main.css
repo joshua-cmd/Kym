@@ -222,7 +222,7 @@
 			rgba(39, 39, 39, 0.3)
 		),
 		var(--bio) 55% 35%;
-	background-size: cover;
+	background-size: 30%;
 	background-repeat: no-repeat;
 	display: -webkit-box;
 	display: -ms-flexbox;
