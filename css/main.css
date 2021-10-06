@@ -222,7 +222,7 @@
 			rgba(39, 39, 39, 0.3)
 		),
 		var(--bio) 55% 35%;
-	background-size: 30%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -451,7 +451,6 @@ card-body {
 	background-color: var(--clr-neutral-100);
 }
 .neon-button {
-	
 	color: var(--clr-neon);
 	display: inline-block;
 	cursor: pointer;
@@ -641,12 +640,11 @@ card-body {
 }
 @media only screen and (max-width: 600px) {
 	.container1 {
-		
 		grid-template-columns: none;
 		grid-template-rows: none;
 		grid-template-areas: none;
 	}
-  }
+}
 @media screen and (min-width: 768px) {
 	.menu-btn {
 		visibility: hidden;
@@ -669,7 +667,7 @@ card-body {
 	.nav .menu-nav__link {
 		font-size: 1.5rem;
 	}
-	
+
 	.about__bio {
 		font-size: 1.5rem;
 	}
