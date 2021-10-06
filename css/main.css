@@ -378,10 +378,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.container1 > .card {
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+
 .card {
 	color: var(--clr-neutral-100);
 	background-image: url("../img/A\ Man\ playing\ the\ piano\ on\ the\ Brooklyn\ Bridge.jpeg")
@@ -454,6 +451,7 @@ card-body {
 	background-color: var(--clr-neutral-100);
 }
 .neon-button {
+	
 	color: var(--clr-neon);
 	display: inline-block;
 	cursor: pointer;
